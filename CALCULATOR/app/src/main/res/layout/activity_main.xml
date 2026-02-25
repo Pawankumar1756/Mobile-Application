@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgColor">
+
+    <TextView
+        android:id="@+id/displayBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|end"
+        android:text="0"
+        android:textSize="60sp"
+        android:textColor="@color/displayColor"
+        android:padding="20dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:padding="8dp"
+        android:useDefaultMargins="true">
+
+        <!-- Row 1 -->
+        <Button android:id="@+id/btnClear" android:text="AC" android:layout_columnSpan="2" android:backgroundTint="@color/opColor" android:width="180dp"/>
+        <Button android:id="@+id/btnSin" android:text="SIN" android:backgroundTint="@color/funcColor"/>
+        <Button android:id="@+id/btnCos" android:text="COS" android:backgroundTint="@color/funcColor"/>
+
+        <!-- Row 2 -->
+        <Button android:id="@+id/btnTan" android:text="TAN" android:backgroundTint="@color/funcColor"/>
+        <Button android:id="@+id/btnLog" android:text="LOG" android:backgroundTint="@color/funcColor"/>
+        <Button android:id="@+id/btnRoot" android:text="√" android:backgroundTint="@color/opColor"/>
+        <Button android:id="@+id/btnDivide" android:text="÷" android:backgroundTint="@color/opColor"/>
+
+        <!-- Row 3 -->
+        <Button android:id="@+id/btnMultiply" android:text="×" android:backgroundTint="@color/opColor"/>
+        <Button android:id="@+id/num7" android:text="7" android:backgroundTint="@color/numColor"/>
+        <Button android:id="@+id/num8" android:text="8" android:backgroundTint="@color/numColor"/>
+        <Button android:id="@+id/num9" android:text="9" android:backgroundTint="@color/numColor"/>
+
+        <!-- Row 4 -->
+        <Button android:id="@+id/btnMinus" android:text="-" android:backgroundTint="@color/opColor"/>
+        <Button android:id="@+id/num4" android:text="4" android:backgroundTint="@color/numColor"/>
+        <Button android:id="@+id/num5" android:text="5" android:backgroundTint="@color/numColor"/>
+        <Button android:id="@+id/num6" android:text="6" android:backgroundTint="@color/numColor"/>
+
+        <!-- Row 5 -->
+        <Button android:id="@+id/btnPlus" android:text="+" android:backgroundTint="@color/opColor"/>
+        <Button android:id="@+id/num1" android:text="1" android:backgroundTint="@color/numColor"/>
+        <Button android:id="@+id/num2" android:text="2" android:backgroundTint="@color/numColor"/>
+        <Button android:id="@+id/num3" android:text="3" android:backgroundTint="@color/numColor"/>
+
+        <!-- Row 6 -->
+        <Button android:id="@+id/btnEquals" android:text="=" android:backgroundTint="@color/opColor"/>
+        <Button android:id="@+id/num0" android:text="0" android:layout_columnSpan="2" android:backgroundTint="@color/numColor" android:width="180dp"/>
+        <Button android:id="@+id/numDot" android:text="." android:backgroundTint="@color/numColor"/>
+
+    </GridLayout>
+
+</LinearLayout>
